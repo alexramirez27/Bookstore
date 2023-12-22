@@ -1,0 +1,80 @@
+header {
+    background-color: rgb(55, 71, 79);
+    height: 100px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    padding-left: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.25em;
+}
+
+body {
+    background-color: rgb(235, 239, 241);
+}
+
+h1.Textbooks {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+}
+
+h1.MainMenu {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.even-columns {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.even-columns > *:nth-child(1) {
+    flex: 1 1 50%;
+}
+
+.even-columns > *:nth-child(2) {
+    flex: 1 1 50%;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+#BusinessFaculty:hover + #Beedie, #Beedie:hover {
+    display: block;
+}
+
+#Beedie {
+    display: none;
+}
+
+#SchoolCompSci:hover + #ComputingScience, #ComputingScience:hover {
+    display: block;
+}
+
+#ComputingScience {
+    display: none;
+}
+
+@media only screen and (max-width:769px){
+    header {
+        font-size: 1em;
+        padding-left: 40px;
+    }
+}
+
+.h1Header img {
+    float: right;
+    padding-right: 20px;
+}
+
+@media only screen and (max-width:550px){
+    .even-columns {
+        flex-direction: column;
+    }
+}
